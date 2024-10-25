@@ -1,3 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-unused-vars": "warn",  // Cambia esto a "off" para desactivar la regla
+    "@typescript-eslint/no-unused-vars": "warn",  // Para TypeScript
+    "no-empty": "warn",  // Puedes ajustar esto según tus necesidades
+    "@typescript-eslint/no-empty-interface": "off"  // Desactiva la regla de interfaces vacías si lo necesitas
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  }
 }
